@@ -1,0 +1,12 @@
+0b7126e0c6e86d3ec295a72f5aa6e0bd
+::res://::1669750829
+icon.svg::CompressedTexture2D::9049704070563029322::1668537944::1669750831::1::::<><>::
+::res://Assets/::1669736597
+Astronaut.png::CompressedTexture2D::5921474601812216021::1669736556::1669750831::1::::<><>::
+::res://Scenes/::1669750647
+MainScene.tscn::PackedScene::8806327541588458402::1669749678::0::1::::<><>::uid://dorf427b5yrnv<>uid://d160kljchm3ak
+Player.tscn::PackedScene::6684968614316736172::1669749678::0::1::::<><>::res://Scripts/Player.gd<>uid://cqmn26ylvjni0
+RigidPlayer.tscn::PackedScene::8177357124468531155::1669750647::0::1::::<><>::res://Scripts/RigidPlayer.gd<>uid://cqmn26ylvjni0
+::res://Scripts/::1669749639
+Player.gd::GDScript::-1::1669736509::0::1::::<>CharacterBody2D<>::
+RigidPlayer.gd::GDScript::-1::1669749639::0::1::::<>RigidBody2D<>::
