@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://dorf427b5yrnv"]
+
+[ext_resource type="Script" path="res://Scripts/RigidPlayer.gd" id="1_4e7dj"]
+[ext_resource type="Texture2D" uid="uid://cqmn26ylvjni0" path="res://Assets/Astronaut.png" id="1_ds7wo"]
+
+[node name="RigidPlayer" type="RigidBody2D"]
+mass = 100.0
+center_of_mass_mode = 1
+gravity_scale = 0.0
+linear_damp_mode = 1
+script = ExtResource("1_4e7dj")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-1, -247, 41, -242, 63, -215, 76, -191, 77, -149, 159, -113, 184, -121, 205, -112, 222, -85, 213, -71, 183, -68, 79, -93, 78, -53, 63, -44, 79, 176, 109, 187, 103, 207, 74, 214, 38, 210, 29, 190, 1, 48, -33, 192, -36, 209, -74, 215, -108, 199, -104, 182, -78, 176, -65, -41, -81, -59, -79, -93, -191, -65, -222, -76, -206, -108, -189, -120, -157, -116, -76, -149, -72, -205, -48, -233, -30, -246)
+
+[node name="Astronaut" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_ds7wo")
+
+[node name="Line2D" type="Line2D" parent="."]
+points = PackedVector2Array(-2, -5, 194, -5)
+width = 5.0
+default_color = Color(1, 1, 1, 0.129412)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+zoom = Vector2(0.5, 0.5)

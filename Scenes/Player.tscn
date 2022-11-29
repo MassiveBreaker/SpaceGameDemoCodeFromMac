@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://c2iipruausbgm"]
+
+[ext_resource type="Script" path="res://Scripts/Player.gd" id="1_4xli5"]
+[ext_resource type="Texture2D" uid="uid://cqmn26ylvjni0" path="res://Assets/Astronaut.png" id="2_cah1j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_60p38"]
+size = Vector2(115, 119)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource("1_4xli5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -0.5)
+shape = SubResource("RectangleShape2D_60p38")
+
+[node name="Astronaut" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_cah1j")

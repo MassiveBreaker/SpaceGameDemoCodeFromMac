@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxp36s0xweonq"]
+
+[ext_resource type="PackedScene" uid="uid://dorf427b5yrnv" path="res://Scenes/RigidPlayer.tscn" id="1_38gmj"]
+[ext_resource type="Texture2D" uid="uid://d160kljchm3ak" path="res://icon.svg" id="1_wscxg"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(412.5, 275.5)
+scale = Vector2(20.1641, 18.6172)
+texture = ExtResource("1_wscxg")
+
+[node name="RigidPlayer" parent="." instance=ExtResource("1_38gmj")]
+position = Vector2(522, 341)
+angular_damp_mode = 1
